@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('home', 'HomeController@index');
+Route::get('contact', 'ContactController@contact');
+Route::get('about', 'AboutController@about');
+Route::get('doctors', 'DoctorsController@doctors');
+Route::get('services', 'ServicesController@services');
+Route::get('blog', 'BlogController@blog');
+
+Route::get('test', function(){
+	return "welcome to laravel course";
+});
